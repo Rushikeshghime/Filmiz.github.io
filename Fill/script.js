@@ -60,7 +60,7 @@
 
   // defining the fectMovies() function to fetch the data from the api
   async function fetchMovies(search) {
-    const url = `https://www.omdbapi.com/?t=${search}&apikey=aa5bfd93`;
+    const url = `https://www.themoviedb.org/movie/upcoming/?t=${search}&apikey=aa5bfd93`;
     try {
       const response = await fetch(url);
       const data = await response.json();
